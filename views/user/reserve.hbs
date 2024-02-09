@@ -1,0 +1,79 @@
+<section class="reservation-form">
+  <div class="back d-flex">
+    <a href="/"><i class="fa fa-angle-left ml-5 mt-3" style="font-size:70px;font-weight:900; color:rgb(255, 208, 0);"></i></a>
+    <h2 class="mk-res text-center">Make a Reservation</h2>
+    <a href="/res-details" class="btn btn-primary " style="width: auto; height:40px; margin-top:30px;margin-left:90px;" >Reserved Details</a>
+  </div>
+
+      
+      
+
+      <div class="container">
+        <form action="/reserve" method="POST" >
+          <label for="name" class="mt-5">Name :</label><br>
+          <input type="text" name="name"  id="name"><br>
+           <label for="email" class="mt-4">Email :</label><br>
+          <input type="email"  name="email"  id="email"><br>
+          <label for="date" class="mt-4">Reservation Date :</label><br>
+          <input type="date"  name="date" placeholder="Date" id="date"><br>
+           <label for="time" class="mt-4">Reservation Time :</label>
+          <input type="time" name="time" placeholder="Time" id="time"><br>
+          <label for="cars" class="mt-4">Select am or pm:</label>
+
+          <select name="ampm" class="mt-5" id="cars">
+            <option value="Am">Am</option>
+            <option value="Pm">Pm</option>
+          </select><br>
+          
+           <label for="cars" class="mt-4">Select table type:</label>
+
+            <select name="table" class="mt-5 " id="cars">
+            <option value="2 person">2 Person</option>
+            <option value="4 person">4 Person</option>
+            <option value="6 person">6 Person</option>
+            <option value="family room">Family room</option>
+          </select><br>
+          <input type="submit" value="Book">
+
+        </form>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+<style>
+
+.mk-res{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  font-size: 60px;
+  color: rgb(255, 208, 0);
+  margin-left: 400px;
+}
+.container{
+  width: 400px;
+  height: 550px;
+  background-color: white;
+  border-radius: 15px;
+}
+form{
+  margin-left: 30px;
+
+}
+form input{
+  border: none;
+  border-bottom: 2px solid black;
+  width: 300px;
+  outline: none;
+}
+form .btn{
+  width: 120px;
+  height: 40px;
+  margin-left: 25px;
+}
+</style>

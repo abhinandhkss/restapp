@@ -1,0 +1,31 @@
+<!-- Image and text -->
+<nav class="navbar navbar-light bg-warning">
+  <a class="navbar-brand p-0 m-0 ml-5 " href="/">
+    Restaurant
+  </a>
+    <a href="admin/res" class="btn btn-primary">reseve</a>
+    <a href="admin/spcl" class="btn btn-primary">today Special</a>
+
+
+</nav>        
+<section>
+    <div class="container " >
+        <form action="/admin/todayspcl" method="POST" enctype="multipart/form-data" style="width: 400px; height:500px; ">
+        <h1 style="text-align:center; font-weight:bold;">Add Products</h1>
+
+            <div class="form-group mt-5">
+              <h1>Add today Specials</h1>
+
+                <label for="exampleInputEmail1">Name</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" name="name" aria-describedby="emailHelp" >
+            </div>
+           
+            <div class="form-group">
+                <label for="exampleInputPassword1">Image</label>
+                <input type="file" class="form-control" name="image" id="exampleInputPassword1">
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="margin-left: 150px;">Add special</button>
+        </form>
+    </div>
+</section>

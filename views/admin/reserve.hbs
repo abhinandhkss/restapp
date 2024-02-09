@@ -1,0 +1,49 @@
+
+  <div class="back d-flex">
+  <a href="/"><i class="fa fa-angle-left ml-5 mt-5" style="font-size:50px;font-weight:900; color:rgb(255, 208, 0);"></i></a>
+  <h2 class="rev text-center">Reserved Details</h2>
+ 
+  </div>
+<div class="container ">
+    <div class="row  ">
+        {{#each reserve}}
+        <div class="col-md-3 ml-4 mr-4 mt-3 ">
+          <div class="cus-id mt-1 ml-4">
+            <h5 class="card-title text-center mr-3 ">Reserved Details</h5>
+            <p>Name :       {{this.name}}</p>
+            <p>Date :       {{this.date}}</p>
+            <p>Time :       {{this.time}}</p>
+            <p> Am or PM :       {{this.ampm}}</p>
+            <p>Table Type :       {{this.table}}</p>
+
+            <a href="/delete/:id" class="btn btn-outline-primary ml-4 mb-5">reserved</a>
+            </div>
+        </div>
+        {{/each}}
+        
+        </div>
+
+
+
+
+        <style>
+
+             .col-md-3{
+    max-width: 230px;
+    max-height: 285px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px  25px -5px rgba(0.0.0.0);
+   }
+   .rev{
+    font-size: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    color:rgb(255, 208, 0);
+    margin-left: 400px;
+   }
+   .card-title{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:900;
+   }
+        </style>

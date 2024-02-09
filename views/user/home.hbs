@@ -1,0 +1,434 @@
+
+<header>
+   <nav class="navbar navbar-expand-lg  navbar-light ">
+  
+      <p class="navbar-brand text-warning ">Restuarant</p>
+        <button class="navbar-toggler ml-1 " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          
+            <ul class="navbar-nav ml-5  mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link  text-warning ml-5" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  text-warning ml-5" href="#">Order</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  text-warning ml-5" href="#">Contact</a>
+            </li>
+     
+            </ul>
+            <div class="dropdown ml-auto  " style="margin-right:80px;">
+                <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                {{#if user}}
+                {{user.name}}
+                {{else}}
+                    Account
+                {{/if}}
+                </button>
+                <div class="dropdown-menu bg-warning"aria-labelledby="dropdownMenuButton">
+                    {{#if user}}
+                    <a class="dropdown-item" href="/logout">Logout</a>
+                    {{else}}
+                    <a class="dropdown-item" href="/login">Login</a>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div class="row">
+<div class="poster">
+
+    <img class="home-img" src="images/HOME.jpeg" alt="">
+</div>
+    <div class="right-home">
+        <p class="wel-text text-center">" Welcome to Our Restuarant,<br> <br>We have provide a new platform to order food from our restuarant and you have to book a table and food early.When you can buy food with excite offer then register</p>
+        <a href="/register" class="btn btn-warning " style="margin-left: 90px;">Register</a>
+        <a href="/login" class="btn btn-primary " style="margin-left: 20px;">Login</a>
+
+</div>
+
+
+
+</header>
+
+<section>
+    <H2 class="to-spcl text-center">Today Specials</H2>
+    <div class="container">
+    <div class="card-body">
+                   
+        <div class="row">
+           <div class="col-md-3 col-6">
+                 <div class="card">
+                <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcmzpHza4LT-Ih1TtQJikuYWsX1fKM4qhZIw&usqp=CAU" alt="Card image cap">
+                
+                </div>
+                <div class="card-body">
+                    <h1 class="text-center">Fried Rice</h1>
+                </div>
+           </div>
+           
+           
+           
+           
+           
+           
+           
+           
+          
+        </div>
+        </div>
+    </div>
+</section>
+
+<section>
+  <div class="text-center" style="font-size: 60px; font-family:'Times New Roman', Times, serif; font-weight:700;color:rgb(255, 174, 0);">Our Services</div>
+  <div class="row mt-5">
+    <div class="table-res">
+        <h1 class="text-center text-warning">Table reservation</h1>
+        <a href="/reserve" class="btn btn-primary ">Reserve</a>
+    </div>
+    <div class="onl-order">
+        <h1 class="text-center text-light">Online Delivery </h1>
+        <a href="/order" class="btn btn-primary">Order</a>
+    </div>
+
+  </div>
+</section>
+
+<section style="height: 300px;">
+    <h1 class="hpy-cus text-center">Happy Customers</h1>
+    <div class="row mt-4">
+
+        <div class="testimonial m-2 ">
+          <div class="cus-id d-flex ">
+              <h6  class="ml-3 ">nandhu</h6>
+              <p class="ml-auto mr-2">⭐⭐⭐⭐ (4/5)</p>
+            </div>
+          <p class="text-center">it was a amazing service.i was very statisfy</p>
+        </div>
+        <div class="testimonial m-2 ">
+          <div class="cus-id d-flex ">
+              <h6  class="ml-3 ">Abhinandh</h6>
+              <p class="ml-auto mr-2">⭐⭐⭐⭐ (4/5)</p>
+            </div>
+          <p class="text-center">very nice,it was a amazing service.i was very statisfy</p>
+        </div>
+        <div class="testimonial m-2 ">
+          <div class="cus-id d-flex ">
+              <h6  class="ml-3 ">nandhu</h6>
+              <p class="ml-auto mr-2">⭐⭐⭐⭐ (4/5)</p>
+            </div>
+          <p class="text-center">it was a amazing service.i was very statisfy</p>
+        </div>
+      
+       
+        <div class="rew-wrt mt-5">
+          <a href="/seemore" class="btn btn-outline-warning ">See More</a>
+          <a href="/add-review" class="btn btn-warning ">Write Rewiew</a>
+
+        </div>
+    </div>
+</section>    
+
+
+     
+
+   
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-column">
+      <h4>About Us</h4>
+      <p>Our platform is the secret ingredient that transforms the chaos of daily operations into a symphony of seamless efficiency.</p>
+    </div>
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Contact Information</h4>
+      <p>Address: 123 Main St, City, State, Zip</p>
+      <p>Email: info@example.com</p>
+      <p>Phone: +1 234 567 890</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2023 Your Restaurant Management System. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+
+<style>
+     header{
+    width: 95%;
+    height:95%;
+    background: white;
+    box-shadow: 0px 0px  45px -5px rgba(0.0.0.0);
+    border-radius: 12px;
+    background-image: url('images/bgg.jpg');
+    background-size: cover;
+    margin: auto;
+    margin-top: 20px;    
+    padding: auto;
+  }
+  .navbar{
+    width: 100%;
+    height: 10%;
+  }
+  .navbar-brand{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 300%;
+    margin-left: 10%;
+    margin-top: 2%;
+    font-weight: 900;
+
+  }
+  .nav-link{
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    
+  }
+  
+
+  .poster {
+  height: 500px;
+  width: 40%;
+  border-radius: 250px;
+  margin-top: 7%;
+  box-shadow: 0px 0px  45px -5px rgba(0.0.0.0);
+  margin-left: 7%;
+
+}
+
+
+
+.home-img{
+  height: 500px;
+  width: 100%;
+  border-radius: 250px;
+  box-shadow: 0px 0px  45px -5px rgba(0.0.0.0 );
+
+}
+.right-home{
+    width: 400px;
+    height:300px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 40px;  
+    margin-left: 10%;
+    margin-top: 7%;
+    
+  }
+  .right-home .btn{
+    width: 100px;
+    height: 40px;
+  }
+  .wel-text{
+        font-size: 18px;
+        color: rgb(255, 174, 0);
+        margin-top: 7%;
+
+  }
+    
+/* today special/////////////////////////////////////////////////////////////////////////////////////*/
+
+.to-spcl{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  font-size: 60px;
+  margin-top: 3%;
+  color: rgb(255, 208, 0);
+  
+}
+.card{
+  border-radius: 25px;
+  height: 250px;
+}
+.img{
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  box-shadow: 0px 0px  25px -5px rgba(0.0.0.0 );
+}
+.img:hover{
+    box-shadow: 0px 0px  45px -5px rgba(255, 208, 0);
+
+}
+
+.card-body h1{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  font-weight: 900;
+  color: rgb(255, 174, 0);
+  
+
+}
+.row{
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+    }
+
+/** order section    //////////////////////////////////////////////////////////////////////////////**/
+
+.table-res{
+  width: 30%;
+  height: 400px;
+   background-color: #fff;
+  border-radius: 25px;
+  box-shadow: 0px 0px  45px -5px rgba(0.0.0.0);
+ margin-right: 100px;
+ background-image: url('images/res.jpg');
+ background-repeat: no-repeat;
+ background-size:contain;
+}
+.table-res h1{
+  font-size: 35px;
+  font-weight: 700;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 38px;
+}
+.table-res .btn{
+  margin-left: 140px;
+  margin-top: 240px;
+  height: 50px;
+  width: 120px;
+  border-radius: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  font-size: 20px;
+  box-shadow: 0px 0px  45px -5px rgba(0.0.0.0);
+  
+}
+.onl-order{
+  width: 30%;
+  height: 400px;
+  background-color: #d1d1d1;
+  border-radius: 25px;
+  box-shadow: 0px 0px  45px -5px rgba(0.0.0.0);
+  background-image: url('images/order.jpeg');
+  background-size: contain;
+}
+.onl-order h1{
+  font-size: 35px;
+  font-weight: 700;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 35px;
+}
+.onl-order .btn{
+  margin-left: 140px;
+  margin-top: 248px;
+  height: 50px;
+  width: 120px;
+  border-radius: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  font-size: 20px;
+  box-shadow: 0px 0px  45px -5px rgba(0.0.0.0);
+}
+
+
+.hpy-cus{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  font-size: 60px;
+  margin-top: 3%;
+  color: rgb(255, 208, 0);
+  
+}
+
+footer{
+  width: 100%;
+  height: 300px;
+  background-color: #ce9e00;
+  margin-top: 40px;
+}
+
+ .reviews {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial{
+  width: 400px;
+  max-height: auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px  15px -5px rgba(0.0.0.0);
+
+
+}
+.rew-wrt .btn{
+    width: 200px;
+    height: 50px;
+}
+.testimonial-carousel{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.footer-column {
+  flex: 1;
+  margin: 0 20px;
+  margin-top: 50px;
+}
+
+.footer-column h4 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+ul li a {
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 0.8em;
+  color:#fff;
+}
+
+
+
+    
+</style>
